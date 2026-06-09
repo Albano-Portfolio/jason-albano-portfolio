@@ -15,11 +15,20 @@ import Footer from "@/components/layout/Footer";
 
 export default function Home() {
   useEffect(() => {
+    // Prevent the browser from restoring previous scroll position
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
+    // Force start at the top
+    window.scrollTo(0, 0);
+
     let cleanup: (() => void) | undefined;
     const initLenis = async () => {
       const LenisModule = await import("lenis");
       const Lenis = LenisModule.default;
       const lenis = new Lenis({ duration: 1.2, smoothWheel: true });
+      // Make sure Lenis itself starts at the top
+      lenis.scrollTo(0, { immediate: true });
       const raf = (time: number) => { lenis.raf(time); requestAnimationFrame(raf); };
       requestAnimationFrame(raf);
       cleanup = () => lenis.destroy();
