@@ -82,7 +82,7 @@ export default function Navbar() {
 
           <div style={{ display: "flex", gap: 12, alignItems: "center" }} className="hidden-mobile">
             <a
-              href="/resume/Jason-Albano-Resume.pdf"
+              href="/Jason-Albano-Resume.pdf"
               download
               style={{
                 display: "flex", alignItems: "center", gap: 8, padding: "8px 16px",
@@ -161,7 +161,7 @@ export default function Navbar() {
               </nav>
               <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
                 <a
-                  href="/resume/Jason-Albano-Resume.pdf"
+                  href="/Jason-Albano-Resume.pdf"
                   download
                   style={{
                     display: "flex", alignItems: "center", justifyContent: "center", gap: 8,
