@@ -178,7 +178,7 @@ export default function HeroSection() {
                 style={{ display: "flex", alignItems: "center", gap: 8, padding: "12px 24px", background: "#06b6d4", color: "#050a15", border: "none", borderRadius: 12, fontSize: 14, fontWeight: 600, cursor: "pointer" }}>
                 <Sparkles size={16} /> View Projects
               </button>
-              <a href="/resume/Jason-Albano-Resume.pdf" download
+              <a href="/Jason-Albano-Resume.pdf" download
                 style={{ display: "flex", alignItems: "center", gap: 8, padding: "12px 24px", border: "1px solid rgba(6,182,212,0.35)", color: "#22d3ee", borderRadius: 12, fontSize: 14, fontWeight: 500, textDecoration: "none" }}>
                 <Download size={16} /> Download Resume
               </a>
